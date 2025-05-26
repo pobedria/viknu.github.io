@@ -1,18 +1,18 @@
-@font-face{font-family:UAFSans;src:url(/_/fonts/uaf_sans/UAFSans-NameTape.ttf ); font-style:normal;font-weight:300}
-@font-face{font-family:UAFSans;src:url(/_/fonts/uaf_sans/UAFSans-Regular.ttf ); font-style:normal;font-weight:400}
-@font-face{font-family:UAFSans;src:url(/_/fonts/uaf_sans/UAFSans-Medium.ttf ); font-style:normal;font-weight:500}
-@font-face{font-family:UAFSans;src:url(/_/fonts/uaf_sans/UAFSans-SemiBold.ttf ); font-style:normal;font-weight:600}
-@font-face{font-family:UAFSans;src:url(/_/fonts/uaf_sans/UAFSans-Bold.ttf ); font-style:normal;font-weight:700}
+@font-face{font-family:UAFSans;src:url(../fonts/uaf_sans/UAFSans-NameTape.ttf ); font-style:normal;font-weight:300}
+@font-face{font-family:UAFSans;src:url(../fonts/uaf_sans/UAFSans-Regular.ttf ); font-style:normal;font-weight:400}
+@font-face{font-family:UAFSans;src:url(../fonts/uaf_sans/UAFSans-Medium.ttf ); font-style:normal;font-weight:500}
+@font-face{font-family:UAFSans;src:url(../fonts/uaf_sans/UAFSans-SemiBold.ttf ); font-style:normal;font-weight:600}
+@font-face{font-family:UAFSans;src:url(../fonts/uaf_sans/UAFSans-Bold.ttf ); font-style:normal;font-weight:700}
 
 
-@font-face{font-family:Volja;src:url(/_/fonts/Volja-Regular.otf); font-style:normal;font-weight:700}
-@font-face{font-family:Volja;src:url(/_/fonts/Volja-Black.otf); font-style:normal;font-weight:900}
+@font-face{font-family:Volja;src:url(../fonts/Volja-Regular.otf); font-style:normal;font-weight:700}
+@font-face{font-family:Volja;src:url(../fonts/Volja-Black.otf); font-style:normal;font-weight:900}
 
 
 
 @font-face {
     font-family: 'UAFSans';
-    src:  url('/_/fonts/uaf_sans/Gilroy-ExtraboldItalic.ttf') format('truetype');
+    src:  url('../fonts/uaf_sans/Gilroy-ExtraboldItalic.ttf') format('truetype');
     font-weight: 800;
     font-style: italic;
 }
