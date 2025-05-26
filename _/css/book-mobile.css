@@ -1,0 +1,47 @@
+@media screen and (max-width:500px) {
+    .booklet .b-arrow div {
+        display: none;
+        text-indent: -9999px;
+        height: 55px;
+        width: 25px;
+        position: absolute;
+        left: 0;
+        top: 25%;
+    }
+
+    .booklet .b-arrow-next div {
+        background: url(/_/js/booklet-master/src/images/arrow-next.png) no-repeat left top;
+        background-size: contain;
+        height: 55px;
+        width: 25px;
+    }
+
+    .booklet .b-arrow-prev div {
+        background: url(/_/js/booklet-master/src/images/arrow-prev.png) no-repeat left top;
+        background-size: contain;
+        height: 55px;
+        width: 25px;
+    }
+
+    .booklet .b-arrow-prev {
+        left: -30px;
+    }
+
+    #mybook div h5 {
+        text-align: center;
+        padding-bottom: 1px;
+        padding-top: 2px;
+        color: #4E4632;
+        font-size: 8px;
+    }
+
+    #mybook div.b-wrap div p {
+        font-size: 6px;
+    }
+
+    #mybook div p {
+        text-align: justify;
+        padding-left: 5px;
+        padding-right: 2px;
+    }
+}

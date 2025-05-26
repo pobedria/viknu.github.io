@@ -1,0 +1,90 @@
+Options -Indexes
+RewriteEngine On
+RewriteBase /
+ 
+
+RewriteRule ^page/(about|struct|study|science|train)/([0-9]{1,10})$ 			index.php?lang=ua&module=pages&id=-$2	 
+
+#CSS
+RewriteRule ^css_bootstrap$ 	/_/css/bootstrap-5.2.0.min.css [L]
+RewriteRule ^css_fancybox$ 		/_/css/fancybox.css [L] 
+RewriteRule ^css_owl$ 			/_/css/owl.carousel.css [L]
+RewriteRule ^css_fonts$ 		/_/css/fonts.css [L] 
+RewriteRule ^css_style$		 	/_/css/style.css [L] 
+
+#JS
+RewriteRule ^js_jquery$ 		/_/js/jquery-3.6.0.min.js [L] 
+RewriteRule ^js_bootstrap$ 		/_/js/bootstrap-5.1.3.bundle.min.js [L]
+RewriteRule ^js_owl_carousel$ 	/_/js/owl.carousel.js [L] 
+RewriteRule ^js_lib$ 			/_/js/lib.js [L]
+RewriteRule ^js_fancybox$		/_/js/fancybox.umd.js [L]
+RewriteRule ^js_maskinput$ 		/_/js/jquery.mask.min.js [L]   
+ 
+
+#SITE
+RewriteRule ^(ua|ru|en|de)/$ 							index.php?lang=$1&id=1 [L]
+RewriteRule ^(ua|ru|en|de)/pages/([0-9]{1,10})$ 		index.php?lang=$1&module=pages&id=$2&sys_link=0 [L]
+RewriteRule ^(ua|ru|en|de)?/?([0-9]{1,10})-(.*)$ 		index.php?lang=$1&module=pages&id=$2&sys_link=1 [L]
+ 
+
+#OTHER 
+RewriteRule ^back$ 						/_/lib/back.php [L]
+RewriteRule ^(ua|ru|en|de)/404$ 		index.php?lang=$1&module=404 [L]
+RewriteRule ^capcha$ 					/_/lib/capcha.php [L]
+RewriteRule ^capcha/new$ 				/_/lib/capcha.php?capcha_new=1 [L]
+RewriteRule ^(ua|ru|en|de)/(search_clear|search)(/.*)?$ 	index.php?lang=$1&module=$2 [L]
+ 
+
+#NEWS
+RewriteRule ^(ua|ru|en|de)/(news|galleries|videos|lib)/([0-9]{1,10})$ 								index.php?lang=$1&module=$2&act=list&category=$3 [L]
+RewriteRule ^(ua|ru|en|de)/(news|galleries|videos|lib)/([0-9]{1,10})/view/([0-9]{1,10})(-(.*))?$ 	index.php?lang=$1&module=$2&act=view&category=$3&id=$4&sys_link=$6 [L]
+
+
+RewriteRule ^(ua|ru|en|de)/abit$ /index.php?lang=$1&module=abit&act=list [L]
+RewriteRule ^(ua|ru|en|de)/abit/([0-9]{4})$ /index.php?lang=$1&module=abit&act=list&year=$2 [L]
+RewriteRule ^(ua|ru|en|de)/abit/view/([0-9]{1,10})$ /index.php?lang=$1&module=abit&act=view&id=$2 [L]
+
+
+# redirect OLD NEWS PAGES TO NEW LINKS	
+RewriteRule ^page/kafedra/([0-9]{1,10})$ 								index.php?lang=ua&module=pages&id=$1
+RewriteRule ^page/news/([0-9]{1,10})$ 									index.php?lang=ua&module=news&act=list&category=-130 
+RewriteRule ^page/gallery/([0-9]{1,10})$ 								index.php?lang=ua&module=gallery&act=list&category=-35 
+RewriteRule ^page/(news|gallery)/([0-9]{1,10})/view/([0-9]{1,10})$ 		index.php?lang=ua&module=$1&act=view&category=$2&id=$3&sys_link=
+
+
+Redirect 301 ^/page/about$ 	/ua/126-pro-institut
+Redirect 301 ^/page/struct$ 	/ua/127-struktura
+Redirect 301 ^/page/study$	/ua/128-osvita
+Redirect 301 ^/page/science$ 	/ua/129-nauka
+Redirect 301 ^/page/abit$ 	/ua/abit/2024
+
+
+
+
+# OLD HTA
+ 
+#RewriteRule ^page/news/([0-9]{1,10})$ /news.php?act=list&page=$1 [L]
+#RewriteRule ^page/news/([0-9]{1,10})/view/([0-9]{1,10})$ /news.php?act=view&page=$1&id=$2 [L]
+#RewriteRule ^page/gallery/([0-9]{1,10})$ /gallery.php?act=list&page=$1 [L]
+#RewriteRule ^page/gallery/([0-9]{1,10})/view/([0-9]{1,10})$ /gallery.php?act=view&page=$1&id=$2 [L]
+
+#RewriteRule ^page/([a-z]{1,10})/([0-9]{1,10})$ /pages.php?module=$1&id=$2 [L]
+#RewriteRule ^page/([a-z]{1,10})$ /pages.php?module=$1 [L]
+
+#RewriteRule ^page/archive$ /archive.php?act=list [L]
+#RewriteRule ^page/archive/([0-9]{4})$ /archive.php?act=list&year=$1 [L]
+#RewriteRule ^page/archive/view/([0-9]{1,10})$ /archive.php?act=view&id=$1 [L]
+
+# TODO Delete on PROD
+SetEnv DB_HOST database_mil
+
+
+
+
+
+
+
+
+
+
+ 

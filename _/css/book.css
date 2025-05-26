@@ -1,0 +1,78 @@
+.booklet .b-wrap-right {
+    box-shadow: inset 0 0 5px #666;
+    border-left: 1px solid #777788;
+    border-right: 1px solid #ccc;
+
+    background: hsla(51, 29%, 33%, 1);
+    background: linear-gradient(0deg, hsla(51, 29%, 33%, 1) 3%, hsla(51, 88%, 90%, 1) 23%, hsla(51, 88%, 90%, 1) 28%, hsla(51, 76%, 38%, 1) 73%);
+    background: -moz-linear-gradient(0deg, hsla(51, 29%, 33%, 1) 3%, hsla(51, 88%, 90%, 1) 23%, hsla(51, 88%, 90%, 1) 28%, hsla(51, 76%, 38%, 1) 73%);
+    background: -webkit-linear-gradient(0deg, hsla(51, 29%, 33%, 1) 3%, hsla(51, 88%, 90%, 1) 23%, hsla(51, 88%, 90%, 1) 28%, hsla(51, 76%, 38%, 1) 73%);
+}
+
+.booklet .b-wrap-left {
+    box-shadow: inset 0 0 5px #666;
+    border-left: 1px solid #ccc;
+
+    /*GREEN*/
+    background: hsla(51, 29%, 33%, 1);
+    background: linear-gradient(180deg, hsla(51, 29%, 33%, 1) 3%, hsla(51, 88%, 90%, 1) 23%, hsla(51, 88%, 90%, 1) 28%, hsla(51, 76%, 38%, 1) 73%);
+    background: -moz-linear-gradient(180deg, hsla(51, 29%, 33%, 1) 3%, hsla(51, 88%, 90%, 1) 23%, hsla(51, 88%, 90%, 1) 28%, hsla(51, 76%, 38%, 1) 73%);
+    background: -webkit-linear-gradient(180deg, hsla(51, 29%, 33%, 1) 3%, hsla(51, 88%, 90%, 1) 23%, hsla(51, 88%, 90%, 1) 28%, hsla(51, 76%, 38%, 1) 73%);
+
+    /*ORANGE*/
+    /*background: hsla(36, 100%, 31%, 1);*/
+    /*background: linear-gradient(180deg, hsla(36, 100%, 31%, 1) 6%, hsla(31, 81%, 84%, 1) 28%, hsla(35, 92%, 95%, 1) 37%, hsla(36, 100%, 47%, 1) 73%);*/
+    /*background: -moz-linear-gradient(180deg, hsla(36, 100%, 31%, 1) 6%, hsla(31, 81%, 84%, 1) 28%, hsla(35, 92%, 95%, 1) 37%, hsla(36, 100%, 47%, 1) 73%);*/
+    /*background: -webkit-linear-gradient(180deg, hsla(36, 100%, 31%, 1) 6%, hsla(31, 81%, 84%, 1) 28%, hsla(35, 92%, 95%, 1) 37%, hsla(36, 100%, 47%, 1) 73%);*/
+
+    /*GRAY*/
+    /*background: hsla(45, 2%, 68%, 1);*/
+    /*background: linear-gradient(180deg, hsla(45, 2%, 68%, 1) 0%, hsla(43, 41%, 93%, 1) 25%, hsla(60, 2%, 90%, 1) 45%);*/
+    /*background: -moz-linear-gradient(180deg, hsla(45, 2%, 68%, 1) 0%, hsla(43, 41%, 93%, 1) 25%, hsla(60, 2%, 90%, 1) 45%);*/
+    /*background: -webkit-linear-gradient(180deg, hsla(45, 2%, 68%, 1) 0%, hsla(43, 41%, 93%, 1) 25%, hsla(60, 2%, 90%, 1) 45%);*/
+}
+
+#mybook div.b-wrap {
+    box-sizing: content-box;
+}
+
+#mybook div.b-wrap div p {
+    font-size: 14px;
+}
+
+#mybook div h5 {
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 30px;
+    color: #4E4632;
+}
+
+#mybook .book_img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15%;
+}
+
+#mybook .book_img img {
+    border: solid #fff;
+    width: 400px;
+    align-self: center;
+}
+
+#mybook div p {
+    text-align: justify;
+    padding-left: 40px;
+    padding-right: 20px;
+}
+
+#mybook .video_div {
+    padding-top: 10px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.NexosYt {
+    border: none !important;
+}
