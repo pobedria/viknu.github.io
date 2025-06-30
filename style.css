@@ -41,7 +41,7 @@ body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
 .navbar {
     background-color: #6a653a;
     padding: 10px 20px;
-    font-family: 'Volja Regular', sans-serif;
+    font-family: 'UAFSans SemiBold', sans-serif;
 }
 .navbar-nav .nav-link {
     color: white;
@@ -53,7 +53,7 @@ body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
 }
 footer {
     background-color: #4d4634;
-    color: #e52421;
+    color: #ffe0a8;
     text-align: center;
     padding: 10px 0;
     position: fixed;
