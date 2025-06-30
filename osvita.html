@@ -16,24 +16,26 @@
     </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Головна</a></li>
-                <li><a href="osvita.html">Освіта</a></li>
-                <li><a href="#">Наука</a></li>
-                <li><a href="#">Вступнику</a></li>
-                <li><a href="#">Контакти</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="header-placeholder"></div>
     <main>
         <h1>Освіта</h1>
         <p>Освітня діяльність у Військовому інституті Київського національного університету імені Тараса Шевченка (далі – ВІКНУ) реалізується як освітній процес, проводиться з метою забезпечення здобуття вищої освіти, задоволення інших освітніх потреб курсантів, слухачів, студентів, ад'юнктів та здійснюється на підставі ліцензії на провадження освітньої діяльності КНУТШ серія АЕ № 636455 від 09.06.2015 та сертифікатів про акредитацію, передбачає видачу випускникам ВІКНУ документів про вищу освіту за акредитованими освітніми програмами.</p>
         <p>Освітня діяльність ВІКНУ спрямована на організацію, забезпечення (навчально-методичне, кадрове, інформаційне, матеріально-технічне (логістичне) забезпечення тощо) та реалізацію освітнього процесу.</p>
     </main>
-    <footer>
-        &copy; 2024 VIKNU
-    </footer>
+    <div id="footer-placeholder"></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('header.html')
+                .then(res => res.text())
+                .then(html => {
+                    document.getElementById('header-placeholder').innerHTML = html;
+                });
+            fetch('footer.html')
+                .then(res => res.text())
+                .then(html => {
+                    document.getElementById('footer-placeholder').innerHTML = html;
+                });
+        });
+    </script>
 </body>
 </html>
