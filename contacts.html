@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Контакти</title>
+</head>
+<body>
+<div id="header-placeholder"></div>
+<main>
+  <h1>Контакти</h1>
+  <p>ЧАТ-БОТ ВІКНУ
+    Щодо будь-яких питань зі вступу, функціональних обов'язків та внутрішніх процесів інституту звертайтесь до нашого боту</p>
+
+</main>
+<div id="footer-placeholder"></div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    fetch('header.html')
+            .then(res => res.text())
+            .then(html => {
+              document.getElementById('header-placeholder').innerHTML = html;
+            });
+    fetch('footer.html')
+            .then(res => res.text())
+            .then(html => {
+              document.getElementById('footer-placeholder').innerHTML = html;
+            });
+  });
+</script>
+</body>
+</html>
