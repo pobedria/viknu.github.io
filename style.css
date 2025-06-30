@@ -1,6 +1,40 @@
 @font-face {
+    font-family: 'UAFSans Regular';
+    src: url('fonts/UAFSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'UAFSans Medium';
+    src: url('fonts/UAFSans-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'UAFSans SemiBold';
+    src: url('fonts/UAFSans-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'UAFSans Bold';
+    src: url('fonts/UAFSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
     font-family: 'UAFSans OnBoard Stencil';
     src: url('fonts/UAFSans-OnBoardStencil.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'UAFSans OnBoard';
+    src: url('fonts/UAFSans-OnBoard.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Volja Regular';
+    src: url('fonts/Volja-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Volja Black';
+    src: url('fonts/Volja-Black.ttf') format('truetype');
 }
 
 body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
