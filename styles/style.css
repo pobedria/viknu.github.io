@@ -37,7 +37,11 @@
     src: url('../fonts/Volja-Black.ttf') format('truetype');
 }
 
-body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0 20px;
+}
 
 .navbar {
     background-color: transparent;
@@ -70,4 +74,5 @@ header {
     background-image: url('../pic/MultiCam.png');
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 0 20px;
 }
