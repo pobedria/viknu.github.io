@@ -75,3 +75,13 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+h1 {
+    font-family: 'UAFSans SemiBold', sans-serif;
+    background: url('../pic/MultiCam.png') no-repeat center;
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+}
