@@ -85,3 +85,12 @@ h1 {
     color: transparent;
 
 }
+h2 {
+    font-family: 'UAFSans Regular', sans-serif;
+    color: #444A38;
+}
+
+p {
+    font-family: 'UAFSans Regular', sans-serif;
+    color: #4D4634;
+}
