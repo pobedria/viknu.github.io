@@ -64,7 +64,7 @@ body {
 }
 
 header {
-    background-image: url('../pic/MultiCam.png');
+    background-image: url('../pic/pixel_viknu.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -87,7 +87,7 @@ footer {
 
 h1 {
     font-family: 'UAFSans Bold', sans-serif;
-    background: url('../pic/MultiCam.png') no-repeat center;
+    background: url('../pic/pixel_viknu.png') no-repeat center;
     background-size: cover;
     background-clip: text;
     -webkit-background-clip: text;
