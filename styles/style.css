@@ -59,6 +59,10 @@ body {
     text-decoration: underline;
 }
 
+.text-justify {
+    text-align: justify;
+}
+
 header {
     background-image: url('../pic/MultiCam.png');
     background-size: cover;
