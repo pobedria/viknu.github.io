@@ -63,6 +63,18 @@ body {
     text-align: justify;
 }
 
+.btn-custom {
+    background-color: #F39200;  /* будь-який колір */
+    color: white;
+    border: 1px solid #F39200;
+    transition: background-color 0.3s, color 0.3s;
+}
+.btn-custom:hover {
+    background-color: #ffffff;
+    color: #F39200;
+    border: 1px solid #F39200;
+}
+
 header {
     background-image: url('../pic/pixel_viknu.png');
     background-size: cover;
