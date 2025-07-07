@@ -131,10 +131,17 @@ p {
     font-family: 'UAFSans Regular', sans-serif;
     color: #4D4634;
 }
-/*li {*/
-/*    font-family: 'UAFSans Regular', sans-serif;*/
-/*    color: #4D4634;*/
-/*}*/
+
+ul:not(.navbar-nav) li {
+    font-family: 'UAFSans Regular', sans-serif;
+    color: #4D4634;
+}
+
+ol li {
+    font-family: 'UAFSans Regular', sans-serif;
+    color: #4D4634;
+}
+
 a{
     color: #929000;
 }
