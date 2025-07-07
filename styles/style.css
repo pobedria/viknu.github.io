@@ -68,6 +68,7 @@ body {
     color: #4d4634;
     border: 1px solid #4d4634;
     transition: background-color 0.3s, color 0.3s;
+    font-family: 'UAFSans Regular', sans-serif;
 }
 .btn-custom:hover {
     background-color: #ffffff;
@@ -144,4 +145,12 @@ ol li {
 
 a{
     color: #929000;
+}
+
+table,
+th,
+td{
+    border: 1px solid #4d4634;
+    color: #4d4634;
+    padding: 10px;
 }
