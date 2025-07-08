@@ -155,4 +155,22 @@ td{
     padding: 10px;
 }
 
+/* Display PDF embed on desktop, link on mobile */
+.desktop-only {
+    display: block;
+}
+
+.mobile-only {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .desktop-only {
+        display: none;
+    }
+    .mobile-only {
+        display: block;
+    }
+}
+
 
