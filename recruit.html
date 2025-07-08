@@ -23,6 +23,12 @@
         <h2>Калькулятор НМТ</h2>
         <h2>Правила прийому</h2>
         <embed src="files/правила_бакалавр.pdf" width="300" height="300">
+        <iframe id="theFrame" src="files/правила_бакалавр.pdf" style="height:300px; width:300px;"></iframe>
+        <script>
+            document.getElementById("theFrame").contentWindow.onload = function() {
+                this.document.getElementsByTagName("img")[0].style.width="100%";
+            };
+        </script>
     </div>
  </main>
 <div id="footer-placeholder"></div>
