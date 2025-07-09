@@ -75,6 +75,14 @@ body {
     color: #F39200;
     border: 1px solid #F39200;
 }
+
+/* Ensure consistent image dimensions inside the carousel */
+.carousel-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
 .carousel-control-prev,
 .carousel-control-next {
     width: 4rem;                /* однакова ширина та висота */
