@@ -75,6 +75,22 @@ body {
     color: #F39200;
     border: 1px solid #F39200;
 }
+.carousel-control-prev,
+.carousel-control-next {
+    width: 4rem;                /* однакова ширина та висота */
+    height: 4rem;
+    top: 50%;                   /* вирівняти по центру каруселі */
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%);
+    width: 3rem;
+    height: 3rem;
+}
 
 header {
     background-image: url('../pic/pixel_viknu.png');
