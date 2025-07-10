@@ -126,10 +126,11 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    background-color: #4D4634;
+    background-color: #6A653A;
     color: #ffffff;
     text-align: center;
     font-family: 'UAFSans SemiBold', sans-serif;
+    font-size: small;
     padding: 4px 0;
 }
 .image-card .caption {
@@ -137,10 +138,11 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #4D4634;
+    background-color: #6A653A;
     color: #ffffff;
     text-align: center;
     font-family: 'UAFSans SemiBold', sans-serif;
+    font-size: small;
     padding: 4px 0;
 }
 
