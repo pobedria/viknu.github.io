@@ -109,6 +109,41 @@ body {
 /*    height: 3rem;*/
 /*}*/
 
+.image-card {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: inline-block;
+}
+.image-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.image-card .top-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #4D4634;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'UAFSans SemiBold', sans-serif;
+    padding: 4px 0;
+}
+.image-card .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #4D4634;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'UAFSans SemiBold', sans-serif;
+    padding: 4px 0;
+}
+
 header {
     background-image: url('../pic/pixel_viknu.png');
     background-size: cover;
