@@ -113,7 +113,7 @@ body {
     position: relative;
     /*border-radius: 15px;*/
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    /*box-shadow: 0 4px 6px rgb(77, 70, 52);*/
     display: inline-block;
     height: 250px;
 }
