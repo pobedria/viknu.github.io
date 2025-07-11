@@ -180,12 +180,13 @@ footer {
 
 
 h1 {
-    font-family: 'UAFSans Bold', sans-serif;
-    background: url('../pic/pixel_viknu.png') no-repeat center;
-    background-size: cover;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+    font-family: 'Volja Regular', sans-serif;
+    color: white;
+    /*background: url('../pic/pixel_viknu.png') no-repeat center;*/
+    /*background-size: cover;*/
+    /*background-clip: text;*/
+    /*-webkit-background-clip: text;*/
+    /*color: transparent;*/
 
 }
 h2 {
