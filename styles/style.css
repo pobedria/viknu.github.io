@@ -115,7 +115,8 @@ body {
     overflow: hidden;
     box-shadow: 0 4px 6px rgb(77, 70, 52);
     display: inline-block;
-    height: 250px;
+    height: 300px;
+
 }
 .image-card img {
     display: block;
@@ -132,7 +133,7 @@ body {
     color: #ffffff;
     text-align: center;
     font-family: 'UAFSans SemiBold', sans-serif;
-    font-size: small;
+    /*font-size: small;*/
     padding: 4px 0;
 }
 .image-card .caption {
@@ -144,8 +145,13 @@ body {
     color: #ffffff;
     text-align: center;
     font-family: 'UAFSans SemiBold', sans-serif;
-    font-size: small;
+    /*font-size: small;*/
     padding: 4px 0;
+}
+
+div.scroll_list {
+    overflow: auto;
+    white-space: nowrap;
 }
 
 header {
