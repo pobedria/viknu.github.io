@@ -166,10 +166,11 @@ header {
 main { padding: 20px; }
 
 footer {
-    background-color: #4d4634;
+    background-color: #4d4634ee;
     background-image: url('../pic/footer_bg.jpg');
     background-size: cover;
-    color: #ffe0a8;
+    background-blend-mode: multiply;
+    color: white;
     text-align: center;
     padding: 10px 0;
     /*position: fixed;*/
