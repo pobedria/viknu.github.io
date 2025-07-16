@@ -215,19 +215,17 @@ h6 {
 
 }
 
-/*p {*/
-/*    font-family: 'UAFSans Regular', sans-serif;*/
-/*    color: #4D4634;*/
-/*}*/
+p {
+    font-family: 'UAFSans Regular', sans-serif;
 
-/*ul:not(.navbar-nav) li {*/
-/*    font-family: 'UAFSans Regular', sans-serif;*/
-/*    color: #4D4634;*/
-/*}*/
+}
+
+ul:not(.navbar-nav) li {
+    font-family: 'UAFSans Regular', sans-serif;
+}
 
 ol li {
     font-family: 'UAFSans Regular', sans-serif;
-    color: #4D4634;
 }
 
 a{
