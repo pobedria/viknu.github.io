@@ -196,34 +196,34 @@ h1 {
 }
 h2 {
     font-family: 'UAFSans SemiBold', sans-serif;
-    color: #444A38;
+
 }
 h3 {
     font-family: 'UAFSans Medium', sans-serif;
-    color: #6A653A;
+
 }
 h4 {
     font-family: 'UAFSans Regular', sans-serif;
-    color: #4D4634;
+
 }
 h5 {
     font-family: 'UAFSans Regular', sans-serif;
-    color: #4D4634;
+
 }
 h6 {
     font-family: 'UAFSans Regular', sans-serif;
-    color: #4D4634;
+
 }
 
-p {
-    font-family: 'UAFSans Regular', sans-serif;
-    color: #4D4634;
-}
+/*p {*/
+/*    font-family: 'UAFSans Regular', sans-serif;*/
+/*    color: #4D4634;*/
+/*}*/
 
-ul:not(.navbar-nav) li {
-    font-family: 'UAFSans Regular', sans-serif;
-    color: #4D4634;
-}
+/*ul:not(.navbar-nav) li {*/
+/*    font-family: 'UAFSans Regular', sans-serif;*/
+/*    color: #4D4634;*/
+/*}*/
 
 ol li {
     font-family: 'UAFSans Regular', sans-serif;
@@ -260,4 +260,98 @@ td{
     }
 }
 
+[data-bs-theme="marine"] {
+    --bs-body-color: var(--bs-white);
+    --bs-body-color-rgb: #{to-rgb($white)};
+    --bs-body-bg: #295D6A;
+    --bs-body-bg-rgb: #295D6A;
+    --bs-tertiary-bg: #{$blue-600};
 
+    .dropdown-menu {
+        --bs-dropdown-bg: #{mix($blue-500, $blue-600)};
+        --bs-dropdown-link-active-bg: #{$blue-700};
+    }
+
+    .btn-secondary {
+        --bs-btn-bg: #{mix($gray-600, $blue-400, .5)};
+        --bs-btn-border-color: #{rgba($white, .25)};
+        --bs-btn-hover-bg: #{darken(mix($gray-600, $blue-400, .5), 5%)};
+        --bs-btn-hover-border-color: #{rgba($white, .25)};
+        --bs-btn-active-bg: #{darken(mix($gray-600, $blue-400, .5), 10%)};
+        --bs-btn-active-border-color: #{rgba($white, .5)};
+        --bs-btn-focus-border-color: #{rgba($white, .5)};
+        --bs-btn-focus-box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .2);
+    }
+}
+
+[data-bs-theme="sky"] {
+    --bs-body-color: var(--bs-white);
+    --bs-body-color-rgb: #{to-rgb($white)};
+    --bs-body-bg: #234390;
+    --bs-body-bg-rgb: #234390;
+    --bs-tertiary-bg: #{$blue-600};
+
+    .dropdown-menu {
+        --bs-dropdown-bg: #{mix($blue-500, $blue-600)};
+        --bs-dropdown-link-active-bg: #{$blue-700};
+    }
+
+    .btn-secondary {
+        --bs-btn-bg: #{mix($gray-600, $blue-400, .5)};
+        --bs-btn-border-color: #{rgba($white, .25)};
+        --bs-btn-hover-bg: #{darken(mix($gray-600, $blue-400, .5), 5%)};
+        --bs-btn-hover-border-color: #{rgba($white, .25)};
+        --bs-btn-active-bg: #{darken(mix($gray-600, $blue-400, .5), 10%)};
+        --bs-btn-active-border-color: #{rgba($white, .5)};
+        --bs-btn-focus-border-color: #{rgba($white, .5)};
+        --bs-btn-focus-box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .2);
+    }
+}
+
+[data-bs-theme="olive"] {
+    --bs-body-color: var(--bs-white);
+    --bs-body-color-rgb: #{to-rgb($white)};
+    --bs-body-bg: #444C35;
+    --bs-body-bg-rgb: #444C35;
+    --bs-tertiary-bg: #{$blue-600};
+
+    .dropdown-menu {
+        --bs-dropdown-bg: #{mix($blue-500, $blue-600)};
+        --bs-dropdown-link-active-bg: #{$blue-700};
+    }
+
+    .btn-secondary {
+        --bs-btn-bg: #{mix($gray-600, $blue-400, .5)};
+        --bs-btn-border-color: #{rgba($white, .25)};
+        --bs-btn-hover-bg: #{darken(mix($gray-600, $blue-400, .5), 5%)};
+        --bs-btn-hover-border-color: #{rgba($white, .25)};
+        --bs-btn-active-bg: #{darken(mix($gray-600, $blue-400, .5), 10%)};
+        --bs-btn-active-border-color: #{rgba($white, .5)};
+        --bs-btn-focus-border-color: #{rgba($white, .5)};
+        --bs-btn-focus-box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .2);
+    }
+}
+
+[data-bs-theme="sso"] {
+    --bs-body-color: var(--bs-white);
+    --bs-body-color-rgb: #{to-rgb($white)};
+    --bs-body-bg: #737479;
+    --bs-body-bg-rgb: #737479;
+    --bs-tertiary-bg: #{$blue-600};
+
+    .dropdown-menu {
+        --bs-dropdown-bg: #{mix($blue-500, $blue-600)};
+        --bs-dropdown-link-active-bg: #{$blue-700};
+    }
+
+    .btn-secondary {
+        --bs-btn-bg: #{mix($gray-600, $blue-400, .5)};
+        --bs-btn-border-color: #{rgba($white, .25)};
+        --bs-btn-hover-bg: #{darken(mix($gray-600, $blue-400, .5), 5%)};
+        --bs-btn-hover-border-color: #{rgba($white, .25)};
+        --bs-btn-active-bg: #{darken(mix($gray-600, $blue-400, .5), 10%)};
+        --bs-btn-active-border-color: #{rgba($white, .5)};
+        --bs-btn-focus-border-color: #{rgba($white, .5)};
+        --bs-btn-focus-box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .2);
+    }
+}
