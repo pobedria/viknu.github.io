@@ -162,7 +162,7 @@ header {
     background-color: #4D4634;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 5px;
+    padding: 0 0;
 }
 
 main { padding: 20px; }
