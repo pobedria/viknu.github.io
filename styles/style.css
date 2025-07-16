@@ -158,9 +158,11 @@ div.scroll_list {
 }
 
 header {
-    background-image: url('../pic/pixel_viknu.png');
+    /*background-image: url('../pic/pixel_viknu.png');*/
+    background-color: #4D4634;
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 5px;
 }
 
 main { padding: 20px; }
