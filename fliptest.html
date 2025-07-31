@@ -3,27 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-  <link rel="stylesheet" href="styles/flipbook.css">
-    <script src="https://cdn.jsdelivr.net/npm/st-pageflip@2.0.6/dist/pageflip.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/st-pageflip@2.0.6/dist/pageflip.min.css" />
+    <link rel="stylesheet" href="styles/bootstrap5.3.0.min.css" >
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/page-flip.browser.js"></script>
+    <link rel="stylesheet" href="styles/stPageFlip.css" />
 </head>
 <body>
-<div id="book" style="width: 400px; height: 300px;"></div>
+
+<div id="book">
+    <div class="my-page">
+        <div style="color: white; background: #6A653A; font-family: 'UAFSans Medium', sans-serif; height: 400px; width: 300px;">
+            Книга пошани
+        </div>
+    </div>
+    <div class="my-page">
+        Page one
+    </div>
+    <div class="my-page">
+        <div style="color: white; background: #6A653A; font-family: 'UAFSans Medium', sans-serif; height: 400px; width: 300px;">
+            <p style="text-align: center;">
+                Книга пошани
+            </p>
+        </div>
+    </div>
+    <div class="my-page">
+        Page three
+    </div>
+    <div class="my-page">
+        Page four
+    </div>
+    <div class="my-page">
+        Last page
+    </div>
+</div>
+
 <script>
     const pageFlip = new St.PageFlip(document.getElementById('book'), {
-        width: 400,
-        height: 300,
+        width: 300,
+        height: 400,
         size: "fixed",
         maxShadowOpacity: 0.5,
         showCover: true,
-        mobileScrollSupport: false
+        mobileScrollSupport: true
     });
-    pageFlip.loadFromImages([
-        'page1.jpg',
-        'page2.jpg',
-        'page3.jpg',
-        'page4.jpg'
-    ]);
+    pageFlip.loadFromHTML(document.querySelectorAll('.my-page'));
 </script>
 </body>
 </html>

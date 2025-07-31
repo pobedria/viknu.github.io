@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/pic/favicon.ico">
+
+    <script src="scripts/page-flip.browser.js"></script>
+    <link rel="stylesheet" href="styles/stPageFlip.css" />
+
     <title>Головна</title>
 
 
@@ -62,6 +66,7 @@
             </ul>
         </div>
     </div>
+
     <div>
         <div style="color: #6A653A; background-color: white" class="container p-3 mx-auto text-center">
             <h2>Спеціальності</h2>
@@ -713,6 +718,42 @@
                 </li>
                 <li>Цивільно-військове співробітництво (ВОС 850400)</li>
             </ul>
+        </div>
+    </div>
+
+    <div class="container p-3 mx-auto text-center">
+        <h2>Книга пошани</h2>
+        <div id="book">
+            <div class="my-page"  data-density="soft">
+                <div style="color: white; background: #6A653A; font-family: 'UAFSans Medium', sans-serif; height: 100%; width: 100%;">
+                    <br>
+                    <p style="color: #F39200">
+                        𝐀
+                    </p>
+                    <p>
+                    Кращі серед рівних
+                    </p>
+                </div>
+            </div>
+            <div class="my-page">
+                Page one
+            </div>
+            <div class="my-page">
+                <div style="color: white; background: #6A653A; font-family: 'UAFSans Medium', sans-serif; height: 400px; width: 300px;">
+                    <p style="text-align: center;">
+                        Книга пошани
+                    </p>
+                </div>
+            </div>
+            <div class="my-page">
+                Page three
+            </div>
+            <div class="my-page">
+                Page four
+            </div>
+            <div class="my-page">
+                Last page
+            </div>
         </div>
     </div>
 
@@ -2657,6 +2698,21 @@
                 document.getElementById('footer-placeholder').innerHTML = html;
             });
     });
+</script>
+<script>
+    const pageFlip = new St.PageFlip(document.getElementById('book'), {
+        width: 200,
+        height: 200,
+        minWidth: 100,
+        maxWidth: 500,
+        minHeight: 100,
+        maxHeight: 500,
+        size: "fixed",
+        maxShadowOpacity: 0.5,
+        showCover: false,
+        mobileScrollSupport: true
+    });
+    pageFlip.loadFromHTML(document.querySelectorAll('.my-page'));
 </script>
 </body>
 </html>
