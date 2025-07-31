@@ -249,6 +249,12 @@ td{
     color: #4d4634;
     padding: 10px;
 }
+#flipbook{
+    width: 400px;
+    height: 300px;
+    background-color: #4d4634;
+}
+
 
 /* Display PDF embed on desktop, link on mobile */
 .desktop-only {
