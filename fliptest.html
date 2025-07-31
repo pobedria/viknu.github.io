@@ -4,16 +4,26 @@
     <meta charset="UTF-8">
     <title>Title</title>
   <link rel="stylesheet" href="styles/flipbook.css">
-  <script src="scripts/jquery-3.7.1.min.js"></script>
-  <script src="scripts/turn.min.js"></script>
-  <script src="scripts/flipbook.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/st-pageflip@2.0.6/dist/pageflip.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/st-pageflip@2.0.6/dist/pageflip.min.css" />
 </head>
 <body>
-<div class="book" id="flipbook">
-  <div class="page">Page 1</div>
-  <div class="page">Page 2</div>
-  <div class="page">Page 3</div>
-  <div class="page">Page 4</div>
-</div>
+<div id="book" style="width: 400px; height: 300px;"></div>
+<script>
+    const pageFlip = new St.PageFlip(document.getElementById('book'), {
+        width: 400,
+        height: 300,
+        size: "fixed",
+        maxShadowOpacity: 0.5,
+        showCover: true,
+        mobileScrollSupport: false
+    });
+    pageFlip.loadFromImages([
+        'page1.jpg',
+        'page2.jpg',
+        'page3.jpg',
+        'page4.jpg'
+    ]);
+</script>
 </body>
 </html>
