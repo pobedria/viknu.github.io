@@ -152,6 +152,16 @@ body {
     padding: 4px 0;
 }
 
+.bachelor{
+    color: white;
+    background: #F39200;
+}
+
+.magister{
+    color: white;
+    background:  #671318
+}
+
 div.scroll_list {
     overflow: auto;
     white-space: nowrap;
