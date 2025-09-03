@@ -492,3 +492,30 @@ td{
         --bs-btn-focus-box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .2);
     }
 }
+
+[data-bs-theme="maroon"] {
+    --bs-body-color: var(--bs-white);
+    --bs-body-color-rgb: #{to-rgb($white)};
+    --bs-body-bg: #671318;
+    --bs-body-bg-rgb: #671318;
+    --bs-tertiary-bg: #{$blue-600};
+
+    --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+
+
+    .dropdown-menu {
+        --bs-dropdown-bg: #{mix($blue-500, $blue-600)};
+        --bs-dropdown-link-active-bg: #{$blue-700};
+    }
+
+    .btn-secondary {
+        --bs-btn-bg: #{mix($gray-600, $blue-400, .5)};
+        --bs-btn-border-color: #{rgba($white, .25)};
+        --bs-btn-hover-bg: #{darken(mix($gray-600, $blue-400, .5), 5%)};
+        --bs-btn-hover-border-color: #{rgba($white, .25)};
+        --bs-btn-active-bg: #{darken(mix($gray-600, $blue-400, .5), 10%)};
+        --bs-btn-active-border-color: #{rgba($white, .5)};
+        --bs-btn-focus-border-color: #{rgba($white, .5)};
+        --bs-btn-focus-box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .2);
+    }
+}
