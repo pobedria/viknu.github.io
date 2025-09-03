@@ -275,9 +275,9 @@ a{
 table,
 th,
 td{
-    border: 1px solid #4d4634;
-    color: #4d4634;
-    padding: 10px;
+    border: 1px solid white;
+    color: white;
+    padding: 5px;
 }
 #flipbook{
     width: 400px;
